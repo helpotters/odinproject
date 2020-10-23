@@ -1,12 +1,12 @@
 # Substrings
 def substrings(string, dictionary)
   string_array = string.downcase!.split(' ')
-  string_array.select!{ |word, dict_word| dictionary.include?(word) }
+  string_array.select!{ |word| dictionary.include?(word) }
   word_tally = string_array.reduce(Hash.new(0)) do |word_hash, word|
                     word_hash[word] += 1
                     word_hash
                 end
-  p word_tally
+  word_tally
 end
 
 dictionary = %w(a how do you do fellow kids total i will me try to hello and but or when why test like a george apples enjoy have just I magic toast harry potter said says wand hagrid nick he she his)
@@ -21,5 +21,3 @@ In spite of his airy tone, there was a look of great bitterness on his face.
 \"But you would think, wouldn't you,\" he erupted suddenly, pulling the letter back out of his pocket, \"that getting hit forty-five times in the neck with a blunt axe would qualify you to join the Headless Hunt?\""
 
 substrings(harry_potter_snippet, dictionary)
-# Output
-# {"harry"=>2, "he"=>6, "just"=>1, "a"=>7, "his"=>7, "said"=>4, "and"=>5, "to"=>3, "do"=>1, "nick"=>1, "i"=>2, "but"=>1, "you"=>2}
