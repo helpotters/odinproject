@@ -1,0 +1,27 @@
+[submodule "tic_tac_toe"]
+	path = tic_tac_toe
+	url = git@github.com:helpotters/tic_tac_toe.git
+[submodule "theodinproject"]
+	path = theodinproject
+	url = git@github.com:helpotters/theodinproject.git
+[submodule "recursion"]
+	path = recursion
+	url = git@github.com:helpotters/recursion.git
+[submodule "mastermind"]
+	path = mastermind
+	url = git@github.com:helpotters/mastermind.git
+[submodule "linked_lists"]
+	path = linked_lists
+	url = git@github.com:helpotters/linked_list.git
+[submodule "knights_travalis"]
+	path = knights_travalis
+	url = git@github.com:helpotters/knights-travalis.git
+[submodule "hangman"]
+	path = hangman
+	url = git@github.com:helpotters/hangman.git
+[submodule "connect_four"]
+	path = connect_four
+	url = git@github.com:helpotters/connect-four.git
+[submodule "binary_search_trees"]
+	path = binary_search_trees
+	url = git@github.com:helpotters/binary-search-tree.git
